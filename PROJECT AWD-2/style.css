@@ -1,0 +1,152 @@
+body {
+  text-align: center;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Open Sans", sans-serif;
+  font-size: 120%;
+  overflow: overlay;
+}
+.logo {
+  border-radius: 30px 30px;
+  height: 4em;
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+div img {
+  border-radius: 30px 30px;
+  height: 4em;
+  width: 6em;
+  margin-top: auto;
+}
+div img:hover {
+  border-bottom: 1px 1px 1px 1px solid black;
+}
+ul {
+  margin-left: -200px;
+  margin-bottom: 50px;
+  list-style-type: none;
+}
+ul li {
+  display: inline-block;
+  padding: 10px;
+}
+ul li a {
+  text-decoration: none;
+  color: rgb(28, 243, 110);
+  padding: 3px 40px;
+  transition: color 0.5s, border-bottom 4s, transform 1s;
+}
+ul li a:hover {
+  color: rgb(0, 150, 57);
+  border-bottom: 1px 1px 1px 1px solid black;
+}
+
+.parent {
+  /* margin-left: -20px; */
+  display: flex;
+  justify-content: space-around;
+}
+.box {
+  background: #000000d0;
+  color: white;
+  padding: 25px 0;
+  width: 30%;
+  max-width: 330px;
+  border-radius: 30px;
+  /* margin-left: 40px; */
+}
+.card {
+  background: #000000d0;
+  color: white;
+  padding: 70px 0;
+  width: 130%;
+  max-width: 500px;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+.embebmap {
+  border-radius: 30px 30px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 46px;
+  width: 46px;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background: #9c9c9c9c;
+}
+
+input.search-bar {
+  padding: 0.5em 1em;
+  border: none;
+  outline: none;
+  border-radius: 24px;
+  background: #8c8c8c8c;
+  color: white;
+  font-family: inherit;
+  font-size: 120%;
+}
+input.search-bar:hover {
+  background: #7c7c7c2b;
+}
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+.description {
+  text-transform: capitalize;
+}
+.flex {
+  align-items: center;
+  margin: auto;
+}
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+/* Changing the Scrollbar */
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #212121;
+  border-radius: 15px;
+  /* height: 1px; */
+}
+
+/* Handle on Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #131314;
+}
